@@ -1,0 +1,153 @@
+<html>
+	<head>
+		WQ Ad
+	</head>
+	<link href="banner.css" rel="stylesheet"/>
+	<script src="jquery.js"></script>
+	<script >
+		$(document).ready(function()
+		{
+			var pagex_bef = 0;
+			var pagex_aft = 0;
+			beginAction();
+			var logoInte = setInterval(function()
+			{
+				shink("#logo")
+			}, 2000);
+			var phoneInte = setInterval(function()
+			{
+				shink("#phone")
+			}, 3000);
+			$("#arrow").click(function()
+			{
+				$("#logo").hide("slow");
+				clearInterval(logoInte);
+				$("#rightBlock").animate(
+				{
+					right : 0
+				}, "slow");
+			});
+			$("#rightBlock").mousedown(function(event)
+			{
+				pagex_bef = event.pageX;
+			});
+			$("#rightBlock").mouseup(function(event)
+			{
+				pagex_aft = event.pageX;
+				if (Number(pagex_aft - pagex_bef) > 50)
+				{
+					$("#rightBlock").animate(
+					{
+						right : -265
+					}, "slow");
+					$("#logo").show("slow");
+					logoInte = setInterval(function()
+					{
+						shink("#logo")
+					}, 2000);
+				}
+			});
+			$("#banner").click(function()
+			{
+				$("#leftBlock").animate(
+				{
+					left : 0
+				}, "slow");
+				$("#inner").animate(
+				{
+					left : 172
+				}, "slow");
+				$("#rightBlock").animate(
+					{
+						right : -265
+					}, "slow");
+			});
+			$("#leftBlock").click(function()
+			{
+				$("#leftBlock").animate(
+				{
+					left : -172
+				}, "slow");
+				$("#inner").animate(
+				{
+					left : 0
+				}, "slow");
+				$("#logo").show("slow");
+			});
+			$("#down").click(function()
+			{
+				alert("will down");
+			});
+			$("#phone").click(function()
+			{
+				alert("will call");
+			});
+		});
+		function shink(element)
+		{
+			$(element).fadeTo("2000", 0.25, function()
+			{
+				$(element).fadeTo("slow", 1)
+			})
+		}
+		function beginAction()
+		{
+			$("#logo").hide();
+			$("#logo").show("slow");
+			$("#logo").animate(
+			{
+				height : 58,
+				width : 40,
+				bottom : 20
+			}, "slow");
+			$("#logo").animate(
+			{
+				height : 30,
+				width : 21,
+				bottom : 5,
+				right : 8
+			}, "slow", function()
+			{
+				$("#rightBlock").animate(
+				{
+					right : -265
+				}, "slow")
+			});
+		};
+	</script>
+
+	<body >
+
+		<div id="outer">
+
+			<div id = "leftBlock">
+				<div id="down">
+					download
+				</div>
+			</div>
+			<div id="inner">
+				<img id="banner" src="testbanner.png" />
+
+				<img id="borderlt" src="1.png" style="position: absolute;left:0;top:0;height:16;width: 16"/>
+				<img id="borderlc1" src="3.png" style="position: absolute;left:0;top:16;height:30;width: 16"/>
+				<img id="borderlc2" src="8.png" style="position: absolute;left:0;top:46;height:38;width: 16"/>
+				<img id="borderlb" src="6.png" style="position: absolute;left:0;top:80;height:16;width: 16"/>
+				<img id="borderct" src="5.png" style="position: absolute;left:16;top:0;height:16;width:468"/>
+				<img id="bordercb" src="10.png" style="position: absolute;left:16;top:80;height:16;width:468"/>
+				<img id="borderrt" src="2.png" style="position: absolute;right:0;top:0;height:16;width: 16"/>
+				<img id="borderrc1" src="4.png" style="position: absolute;right:0;top:16;height:30;width: 16"/>
+				<img id="borderrc2" src="9.png" style="position: absolute;right:0;top:46;height:34;width: 16"/>
+				<img id="borderrb" src="7.png" style="position: absolute;right:0;top:80;height:16;width: 16"/>
+
+				<div id="rightBlock">
+					<img id="arrow" src="12.png" />
+					<img id="logo2" src="14.png" />
+					<img id="phone" src="13.png"/>
+				</div>
+				<img id="logo" src="18.png" />
+
+			</div>
+
+		</div>
+	</body>
+</html>

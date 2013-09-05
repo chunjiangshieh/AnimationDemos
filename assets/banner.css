@@ -1,0 +1,74 @@
+
+body{
+	width:500;
+	height:100;
+}
+	#outer {
+		padding: 0;
+		float: left;
+		border: 1px dotted #00ffff;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 96;
+		width: 500;
+	}
+	#inner {
+		position: absolute;
+		/*		border: 1px dotted #0F0;*/
+		width: 500;
+		height: 96;
+	}
+	div#rightBlock {
+		position: absolute;
+		background-image: url(11.png);
+		/*		border: 1px dotted #000000;*/
+		width: 299;
+		height: 96;
+		right: -299;
+	}
+	#arrow {
+		position: relative;
+		left: 16;
+		top: 38;
+	}
+	#logo2 {
+		position: absolute;
+		left: 50;
+		top: 20;
+	}
+	#phone {
+		position: absolute;
+		left: 230;
+		top: 20
+	}
+	#logo {
+		position: absolute;
+		right: 20;
+		bottom: 40;
+		height: 5.8;
+		width: 4;
+	}
+	#leftBlock {
+		position: absolute;
+		/*		border: 1px dotted #0F0;*/
+		background-image: url(15.png);
+		left: -172;
+		height: 96;
+		width: 172;
+	}
+	#down {
+		position: absolute;
+		margin: 25;
+		background-image: url(16.png);
+		text-align: center;
+		width: 113;
+		height: 47;
+	}
+	#banner {
+		position: absolute;
+		/*		border: 1px dotted #0F0;*/
+		height: 100%;
+		width: 500;
+	}

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>一位前辈用DIV+CSS布局网页的实例 - www.webdm.cn </title>
+       <link rel="stylesheet" href="file1.css" />
+	   <script src="file1.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>title</h1>
+            <div id="nav">
+                <ul>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <div id="sidebar">
+                <dl>
+                    <dt class="first">
+                        	分类
+                    </dt>
+                    <dd>
+                        <a href="#" onclick="javascript:document.getElementById('center').innerHTML='12345'">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        	链接
+                    </dt>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        dt
+                    </dt>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                    <dd>
+                        <a href="#">link</a>
+                    </dd>
+                </dl>
+            </div>
+            <div id="center">
+                center
+            </div>
+            <div id="right">
+                right
+            </div>
+        </div>
+        <div id="footer">
+            footer
+        </div>
+    </body>
+</html>

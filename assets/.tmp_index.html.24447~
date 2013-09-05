@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>可以排序的table表格并有分页功能 </title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h3>可以排序的table表格并有分页功能</h3>
+	<br />
+	<input type="button" onclick="saveTable('tableExcel');" value="createExcel"/>
+	<div id="tableExcel">  
+	<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+		<thead>
+			<tr>
+				<th ><h3>ID</h3></th>    <!-- class="nosort" -->
+				<th><h3>Name</h3></th>
+				<th><h3>Phone</h3></th>
+				<th><h3>Email</h3></th>
+				<th><h3>Zip</h3></th>
+				<th><h3>Birthdate</h3></th>
+				<th><h3>Last Access</h3></th>
+				<th><h3>Rating</h3></th>
+				<th><h3>Done</h3></th>
+				<th><h3>Salary</h3></th>
+				<th><h3>Score</h3></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Ezekiel Hart</td>
+				<td>(627) 536-4760</td>
+				<td><a href="mailto:#">tortor@est.ca</a></td>
+				<td>53082</td>
+				<td>12/02/1962</td>
+				<td>March 26, 2009</td>
+				<td>-7</td>
+				<td>7%</td>
+				<td>$73,229</td>
+				<td>6.9</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jaquelyn Pace</td>
+				<td>(921) 943-5780</td>
+				<td><a href="mailto:#">in@elementum.org</a></td>
+				<td>46789</td>
+				<td>06/03/1957</td>
+				<td>October 20, 2006</td>
+				<td>-7</td>
+				<td>33%</td>
+				<td>$130,752</td>
+				<td>4.9</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Lois Pickett</td>
+				<td>(835) 361-5993</td>
+				<td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+				<td>9814</td>
+				<td>10/15/1983</td>
+				<td>June 01, 1999</td>
+				<td>4</td>
+				<td>44%</td>
+				<td>$48,684</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Lois Pickett</td>
+				<td>(835) 361-5993</td>
+				<td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+				<td>9814</td>
+				<td>10/15/1983</td>
+				<td>June 01, 1999</td>
+				<td>4</td>
+				<td>44%</td>
+				<td>$48,684</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Lois Pickett</td>
+				<td>(835) 361-5993</td>
+				<td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+				<td>9814</td>
+				<td>10/15/1983</td>
+				<td>June 01, 1999</td>
+				<td>4</td>
+				<td>44%</td>
+				<td>$48,684</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Lois Pickett</td>
+				<td>(835) 361-5993</td>
+				<td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+				<td>9814</td>
+				<td>10/15/1983</td>
+				<td>June 01, 1999</td>
+				<td>4</td>
+				<td>44%</td>
+				<td>$48,684</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Lois Pickett</td>
+				<td>(835) 361-5993</td>
+				<td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+				<td>9814</td>
+				<td>10/15/1983</td>
+				<td>June 01, 1999</td>
+				<td>4</td>
+				<td>44%</td>
+				<td>$48,684</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Lois Pickett</td>
+				<td>(835) 361-5993</td>
+				<td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+				<td>9814</td>
+				<td>10/15/1983</td>
+				<td>June 01, 1999</td>
+				<td>4</td>
+				<td>44%</td>
+				<td>$48,684</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Lois Pickett</td>
+				<td>(835) 361-5993</td>
+				<td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+				<td>9814</td>
+				<td>10/15/1983</td>
+				<td>June 01, 1999</td>
+				<td>4</td>
+				<td>44%</td>
+				<td>$48,684</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Lois Pickett</td>
+				<td>(835) 361-5993</td>
+				<td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+				<td>9814</td>
+				<td>10/15/1983</td>
+				<td>June 01, 1999</td>
+				<td>4</td>
+				<td>44%</td>
+				<td>$48,684</td>
+				<td>5.5</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Keane Raymond</td>
+				<td>(605) 803-1561</td>
+				<td><a href="mailto:#">at.risus.Nunc@ipsum.com</a></td>
+				<td>97129</td>
+				<td>07/30/1982</td>
+				<td>July 24, 1996</td>
+				<td>5</td>
+				<td>20%</td>
+				<td>$7,023</td>
+				<td>9.5</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Porter Thomas</td>
+				<td>(666) 569-9894</td>
+				<td><a href="mailto:#">non@Proin.ca</a></td>
+				<td>59953</td>
+				<td>09/27/1986</td>
+				<td>December 05, 2007</td>
+				<td>1</td>
+				<td>66%</td>
+				<td>$69,875</td>
+				<td>0.9</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Imani Murphy</td>
+				<td>(771) 294-6690</td>
+				<td><a href="mailto:#">Aenean.sed@elit.ca</a></td>
+				<td>69771</td>
+				<td>10/23/1970</td>
+				<td>December 08, 1996</td>
+				<td>-1</td>
+				<td>30%</td>
+				<td>$113,763</td>
+				<td>4.9</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Zachery Guthrie</td>
+				<td>(851) 784-4129</td>
+				<td><a href="mailto:#">nunc.nulla@vel.com</a></td>
+				<td>66960</td>
+				<td>12/22/1972</td>
+				<td>September 20, 2002</td>
+				<td>-5</td>
+				<td>24%</td>
+				<td>$130,248</td>
+				<td>6.9</td>
+			</tr>
+		
+		
+		
+			<tr>
+				<td>25</td>
+				<td>Charissa Manning</td>
+				<td>(438) 395-9392</td>
+				<td><a href="mailto:#">nibh.vulputate@necelendnon.org</a></td>
+				<td>63431</td>
+				<td>07/01/1980</td>
+				<td>April 02, 2005</td>
+				<td>-8</td>
+				<td>11%</td>
+				<td>$32,193</td>
+				<td>3.5</td>
+			</tr>
+			<tr>
+				<td>26</td>
+				<td>Noah Smith</td>
+				<td>(963) 652-2643</td>
+				<td><a href="mailto:#">Sed.neque@Duis.org</a></td>
+				<td>83867</td>
+				<td>01/19/1986</td>
+				<td>April 03, 2005</td>
+				<td>-5</td>
+				<td>86%</td>
+				<td>$96,995</td>
+				<td>3.5</td>
+			</tr>
+	
+			<tr>
+				<td>40</td>
+				<td>Fritz Benton</td>
+				<td>(525) 353-2984</td>
+				<td><a href="mailto:#">a@diamnunc.com</a></td>
+				<td>11530</td>
+				<td>10/02/1957</td>
+				<td>June 16, 2002</td>
+				<td>-5</td>
+				<td>2%</td>
+				<td>$75,654</td>
+				<td>8.9</td>
+			</tr>
+			<tr>
+				<td>41</td>
+				<td>Mannix Davidson</td>
+				<td>(106) 260-1651</td>
+				<td><a href="mailto:#">pulvinar@Duisvolutpat.org</a></td>
+				<td>15815</td>
+				<td>08/24/1964</td>
+				<td>October 24, 2002</td>
+				<td>1</td>
+				<td>93%</td>
+				<td>$11,498</td>
+				<td>2.5</td>
+			</tr>
+
+		</tbody>
+  </table>
+  </div>
+	<div id="controls">
+		<div id="perpage">
+			<select onchange="sorter.size(this.value)">
+			<option value="5">5</option>
+				<option value="10" selected="selected">10</option>
+				<option value="20">20</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+			</select>
+			<span>Entries Per Page</span>
+		</div>
+		<div id="navigation">
+			<img src="images/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+			<img src="images/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+			<img src="images/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+			<img src="images/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+		</div>
+		<div id="text">Displaying Page <span id="currentpage"></span> of <span id="pagelimit"></span></div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript">
+  var sorter = new TINY.table.sorter("sorter");
+	sorter.head = "head";
+	sorter.asc = "asc";
+	sorter.desc = "desc";
+	sorter.even = "evenrow";
+	sorter.odd = "oddrow";
+	sorter.evensel = "evenselected";
+	sorter.oddsel = "oddselected";
+	sorter.paginate = true;
+	sorter.currentid = "currentpage";
+	sorter.limitid = "pagelimit";
+	sorter.init("table",1);
+	
+  </script>
+  	 <script language=javascript>
+function saveTable(tableid) { 
+	try
+	{
+		 var winname = window.open('', '_blank', 'top=10000'); 
+          var strHTML = document.getElementById(tableid).innerHTML; 
+          winname.document.open('text/html', 'replace'); 
+          winname.document.writeln(strHTML); 
+          winname.document.execCommand('saveas','','table.xls'); 
+          winname.close(); 
+	}
+	catch(e)
+	{
+		alert("保存为Excel失败！");
+	}
+         
+} 
+</script>
+
+
+	
+
+</body>
+</html>

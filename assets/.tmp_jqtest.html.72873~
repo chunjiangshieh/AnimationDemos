@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#fadeout").click(function(){
+  $("div").fadeOut("slow");
+  });
+  $("#fadein").click(function(){
+  $("div").fadeIn("slow");
+  });
+  $("div").fadeTo("slow",0.1);
+  $("div").fadeTo("slow",1);
+  $("div").fadeTo("slow",0.1);
+  $("div").fadeTo("slow",1);
+});
+</script>
+</head>
+
+<body>
+<div id="test" style="background:yellow;width:300px;height:300px">
+
+</div>
+<button id="fadeout"type="button">点击这里查看淡出效果</button>
+<button id="fadein" type="button">点击这里查看淡入效果</button>
+
+</body>
+
+</html>
